@@ -1,0 +1,79 @@
+{
+  "samples": 150,
+  "missing_cells": 0,
+  "duplicate_features": 3,
+  "seed": 42,
+  "k": 3,
+  "workers": 4,
+  "iterations": 7,
+  "converged": true,
+  "sse": 140.96581663074699,
+  "silhouette": 0.4589717867018717,
+  "adjusted_rand_index": 0.6201351808870379,
+  "serial_parallel_equal": true,
+  "environment": {
+    "python": "3.10.7",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "cpu": "AMD64",
+    "logical_cpu_count": 12
+  },
+  "benchmark": [
+    {
+      "samples": 150,
+      "threads": 1,
+      "median_ms": 0.018300022929906845,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 150,
+      "threads": 2,
+      "median_ms": 0.08539995178580284,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 150,
+      "threads": 4,
+      "median_ms": 0.1699999556876719,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 150,
+      "threads": 8,
+      "median_ms": 0.35389995900914073,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 300000,
+      "threads": 1,
+      "median_ms": 25.921299995388836,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 300000,
+      "threads": 2,
+      "median_ms": 18.00300000468269,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 300000,
+      "threads": 4,
+      "median_ms": 14.870000013615936,
+      "repeats": 9,
+      "equal_to_serial": true
+    },
+    {
+      "samples": 300000,
+      "threads": 8,
+      "median_ms": 14.386199996806681,
+      "repeats": 9,
+      "equal_to_serial": true
+    }
+  ]
+}
